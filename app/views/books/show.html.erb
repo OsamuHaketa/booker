@@ -7,5 +7,13 @@
     <h3>Body: <%= @book.body %></h3>
 </div>
 
+<% if @book.errors.any? %>
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
 <%= link_to "Edit", edit_book_path(@book.id), class: "black" %>
 <%= link_to "Back", books_path, class: "black" %>
