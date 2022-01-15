@@ -1,7 +1,11 @@
-<h2>タイトル</h2>
-<p><%= @book.title %></p>
+<% flash.each do |message_type, message| %>
+  <div class="notice"><% message_type %><%= message %></div>
+<% end %>
 
-<h2>本文</h2>
-<p><%= @book.body %></p>
-<%= link_to "編集", edit_book_path(@book.id) %>
-<%= link_to "削除", destroy_book_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+<div class="show-box">
+    <h3>Title: <%= @book.title %></h3>
+    <h3>Body: <%= @book.body %></h3>
+</div>
+
+<%= link_to "Edit", edit_book_path(@book.id), class: "black" %>
+<%= link_to "Back", books_path, class: "black" %>

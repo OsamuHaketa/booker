@@ -1,3 +1,46 @@
+
+header {
+   padding-left: 24px;
+  margin-bottom: 3px;
+}
+
+main {
+  padding-left: 24px;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: 100;
+  margin-bottom: 0px;
+}
+
+th, tr {
+  height:30px;
+}
+
+.black {
+  color: black;
+  font-size:13px;
+}
+
+.notice {
+  color: green;
+  font-size:11px;
+  padding: 20px;
+}
+
+.show-box {
+  margin: 30px;
+}
+
+.top-text {
+  margin: 20px;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
